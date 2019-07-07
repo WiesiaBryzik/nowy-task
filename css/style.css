@@ -33,7 +33,7 @@
 /* Navigation */
 .navigation {
   text-align: right;
-  margin: 50px -455px;
+  margin: 50px auto;
   position: absolute;
   width: 100%;
   z-index: 9999;
@@ -184,5 +184,56 @@
   bottom: 5px;
   background-color: #ffffff;
   margin: auto;
+}
+
+/*Footer*/
+footer {
+  margin: 48px 0;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social {
+  list-style-type: none;
+  text-align: center;
+  margin: 48px 0;
+}
+
+.social li {
+  display: inline-block;
+  background-color: black;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  transition: all 1s;
+}
+
+.social li a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  transition: all 1s;
+  text-decoration: none;
+}
+
+.social i {
+  font-size: 40px;
+}
+
+footer .copyright {
+  position: relative;
+  text-align: left;
+}
+
+footer .socials {
+  position: absolute;
+  top: -50px;
 }
 /*# sourceMappingURL=style.css.map */
