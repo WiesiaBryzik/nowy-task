@@ -1,3 +1,30 @@
+/*Global*/
+.section-title {
+  color: black;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  color: black;
+  text-transform: capitalize;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
 /* Navigation */
 .navigation {
   text-align: right;
@@ -75,5 +102,28 @@
   font-size: 64px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+/*Services*/
+.services {
+  -ms-flex: 0 0 33.333%;
+      flex: 0 0 33.333%;
+  position: relative;
+}
+
+.services p {
+  padding: 5px 15px;
+  color: #576574;
+}
+
+.services i {
+  color: #f9ca24;
+  border: 2px solid #f9ca24;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  transition: all 1s;
+  font-size: 22px;
 }
 /*# sourceMappingURL=style.css.map */
