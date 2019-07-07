@@ -2,11 +2,16 @@
 .section-title {
   color: black;
   text-transform: uppercase;
+  text-align: center;
+  padding: 35px 0 0 0;
+  margin: 0;
 }
 
 .section-subtitle {
   color: black;
   text-transform: capitalize;
+  margin: 0;
+  padding: 5px 0 0 0;
 }
 
 .container {
@@ -112,8 +117,11 @@
 }
 
 .services p {
-  padding: 5px 15px;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 15px;
   color: #576574;
+  text-align: center;
 }
 
 .services i {
@@ -125,5 +133,56 @@
   line-height: 50px;
   transition: all 1s;
   font-size: 22px;
+}
+
+/*Gallery*/
+.gallery {
+  padding: 0;
+  margin: 0 50px;
+  background-color: #f1f2f6;
+  height: 100%;
+}
+
+.gallery .gallery-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 72px auto;
+  max-width: 900px;
+}
+
+.gallery .gallery-inner .gallery-item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.gallery .gallery-inner .gallery-item img {
+  display: inline-block;
+  width: 280px;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery p {
+  color: #576574;
+  text-align: center;
+  margin: 0;
+  padding: 7px 0;
+}
+
+.description {
+  display: inline-block;
+  position: relative;
+  width: 95%;
+  padding: 0;
+  bottom: 5px;
+  background-color: #ffffff;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

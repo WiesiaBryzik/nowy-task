@@ -1,5 +1,5 @@
 $color-main: #f9ca24;
-$color-shadow: #dcdde1;
+$color-shadow: #f1f2f6;
 $color-background: #40739e;
 $color-text-dark: #576574;
 $color-text-light: #ffffff;
@@ -10,11 +10,16 @@ $transition: all 1s;
 .section-title {
 	color: black;
 	text-transform: uppercase;
+	text-align: center;
+	padding: 35px 0 0 0;
+	margin: 0;
 }
 
 .section-subtitle {
 	color: black;
 	text-transform: capitalize;
+	margin: 0;
+	padding: 5px 0 0 0;
 }
 
 .container {
@@ -119,8 +124,11 @@ $transition: all 1s;
     position: relative;
 
     p {
-        padding: 5px 15px;
+        display: inline-block;
+		margin: 0;
+		padding: 10px 15px;
 		color: $color-text-dark;
+		text-align: center;
     }
 }
 
@@ -133,4 +141,54 @@ $transition: all 1s;
     line-height: 50px;
     transition: $transition;
 	font-size: 22px;
+}
+
+
+/*Gallery*/
+
+.gallery {
+    padding: 0;
+	margin: 0 50px;
+	background-color: $color-shadow;
+	height: 100%;
+
+    .gallery-inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 72px auto;
+		max-width: 900px;
+        		        
+        .gallery-item {
+            position: relative;
+            margin: 0;
+			padding: 0;
+            float: left; 
+            width: 33%;
+            text-align: center;
+			            
+            img {
+                display: inline-block;
+                width: 280px;
+                height: 260px;
+				object-fit: cover;
+		    }
+        }
+    }
+}
+
+.gallery p {
+	color: $color-text-dark;
+	text-align: center;
+	margin: 0;
+	padding: 7px 0;
+}
+
+.description {
+	display: inline-block;
+	position: relative;
+	width: 95%;
+	padding: 0;
+	bottom: 5px;
+	background-color: $color-text-light;
+	margin: auto;
 }
