@@ -1,7 +1,10 @@
 /* Navigation */
 .navigation {
   text-align: right;
-  margin: 110px 470px;
+  margin: 50px -455px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 .navigation ul {
@@ -19,7 +22,57 @@
   text-decoration: none;
   color: #ffffff;
   white-space: nowrap;
-  font-variant: small-caps;
+  text-transform: uppercase;
   padding: 15px;
+}
+
+/*Splash*/
+.splash {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 200px 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(https://images.pexels.com/photos/1841841/pexels-photo-1841841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center bottom;
+  text-align: center;
+  color: #ffffff;
+}
+
+.splash .btn {
+  display: inline-block;
+  font-variant: small-caps;
+  min-width: 160px;
+  margin: 24px auto 24px auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #f9ca24;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: all 1s;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.splash .page-title {
+  font-size: 50px;
+  padding: 15px 0;
+  font-style: italic;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+
+.splash .page-subtitle {
+  font-size: 64px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

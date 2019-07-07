@@ -1,4 +1,4 @@
-$color-main: #274c75;
+$color-main: #f9ca24;
 $color-shadow: #dcdde1;
 $color-background: #40739e;
 $color-text-dark: #192a56;
@@ -10,7 +10,10 @@ $transition: all 1s;
 
 .navigation {
     text-align: right;
-	margin: 110px 470px;
+	margin: 50px -455px;
+    position: fixed;
+	width: 100%;
+	z-index:9999;
   
 
     ul {
@@ -26,9 +29,60 @@ $transition: all 1s;
                 text-decoration: none;
                 color: $color-text-light;
                 white-space: nowrap;
-				font-variant: small-caps;
+				text-transform: uppercase;
 				padding: 15px;
             }
         }
     }
+}
+
+
+/*Splash*/
+
+.splash {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 200px 24px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://images.pexels.com/photos/1841841/pexels-photo-1841841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-position: center bottom;
+	text-align: center;
+	color: $color-text-light;
+
+	.btn {
+		display: inline-block;
+		font-variant: small-caps;
+		min-width: 160px;
+		margin: 24px auto 24px auto;
+		padding: 16px;
+		border-radius: 5px;
+		font-size: 20px;
+		text-align: center;
+		text-decoration: none;
+		cursor: pointer;
+		background-color: $color-main;
+		background-position: 100% 0;
+		background-size: 300%;
+		transition: $transition;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $color-text-light;
+	}
+}
+
+.splash .page-title {
+    font-size: 50px;
+    padding: 15px 0;
+	font-style: italic;
+	text-transform: capitalize;
+	font-weight: lighter;
+} 
+
+.splash .page-subtitle {
+    font-size: 64px;
+	text-transform: uppercase;
+	font-weight: bold;
+	
 }
