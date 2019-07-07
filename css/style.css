@@ -1,0 +1,25 @@
+/* Navigation */
+.navigation {
+  text-align: right;
+  margin: 110px 470px;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  white-space: nowrap;
+  font-variant: small-caps;
+  padding: 15px;
+}
+/*# sourceMappingURL=style.css.map */
